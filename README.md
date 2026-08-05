@@ -1,6 +1,6 @@
 # Hong Kong Monetary Authority Exchange Rate API client
 
-Official **Hong Kong Monetary Authority** (Hong Kong) daily exchange rates in Node.js / TypeScript — ~19 currencies against the HKD, with history back to 1996. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Hong Kong Monetary Authority** (Hong Kong) daily exchange rates in Node.js / TypeScript — ~19 currencies against the HKD, with history back to 1981. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the bank's own publication date.
 
