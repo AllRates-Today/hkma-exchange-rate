@@ -1,6 +1,6 @@
 {
   "name": "hkma-exchange-rate",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Official Hong Kong Monetary Authority (Hong Kong) daily exchange rates — 17 currencies vs HKD, history since 1981. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "hkma",
