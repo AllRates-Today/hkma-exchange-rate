@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'HKD', { apiKey: 'art_live_...' });
 {
   bank: 'hkma',
   name: 'Hong Kong Monetary Authority',
-  rate_date: '2026-07-31',   // Hong Kong Monetary Authority's own publication date
+  rate_date: '2026-08-31',   // Hong Kong Monetary Authority's own publication date
   source: 'USD',
   target: 'HKD',
-  rate: 7.842,
+  rate: 7.839,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'hkma',
   name: 'Hong Kong Monetary Authority',
-  rate_date: '2026-07-31',
+  rate_date: '2026-08-31',
   rates: [
-    { "base": "USD", "quote": "HKD", "type": "reference", "value": 7.842 },
+    { "base": "USD", "quote": "HKD", "type": "reference", "value": 7.839 },
     // … the rest of the published table (17 currencies vs HKD)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'hkma-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'HKD', from: '2026-01-01', to: '2026-07-31' },
+  { source: 'USD', target: 'HKD', from: '2026-01-01', to: '2026-08-31' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'HKD',
   from: '2026-01-01',
-  to: '2026-07-31',
+  to: '2026-08-31',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-07-31', rate: 7.842, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-08-31', rate: 7.839, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Hong Kong Monetary Authority currently publishes rates covering **18 currencies** (as of the latest table):
+Hong Kong Monetary Authority currently publishes rates covering **17 currencies** against the HKD (as of the latest table):
 
-`AUD` · `CAD` · `CHF` · `CNY` · `EUR` · `GBP` · `HKD` · `IDR` · `INR` · `JPY` · `KRW` · `MYR` · `PHP` · `SGD` · `THB` · `TWD` · `USD` · `ZAR`
+🇦🇺 `AUD` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇮🇩 `IDR` · 🇮🇳 `INR` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇲🇾 `MYR` · 🇵🇭 `PHP` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇼 `TWD` · 🇺🇸 `USD` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'HKD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1981 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/hkma.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/hkma/latest.json`
 
 ## 🔗 Links
 
