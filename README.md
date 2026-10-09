@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/hkma-exchange-rate.svg)](https://github.com/AllRates-Today/hkma-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/hkma-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/HKD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fhkma%3Fsource%3DUSD%26target%3DHKD&query=%24.rate&label=USD%2FHKD%20published%20by%20Hong%20Kong%20Monetary%20Authority&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/hkma/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fhkma%3Fsource%3DUSD%26target%3DHKD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/hkma/)
 
 **Official Hong Kong Monetary Authority (Hong Kong) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Hong Kong Monetary Authority itself prints, every business day.**
 
@@ -32,6 +34,36 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Hong Kong Monetary Authority table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-08-31** by Hong Kong Monetary Authority — 17 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | HKD | reference | 5.612 |
+| CAD | HKD | reference | 5.6395 |
+| CHF | HKD | reference | 9.691 |
+| CNY | HKD | reference | 1.16635 |
+| EUR | HKD | reference | 9.0845 |
+| GBP | HKD | reference | 10.6145 |
+| IDR | HKD | reference | 0.0004418 |
+| INR | HKD | reference | 0.0825 |
+| JPY | HKD | reference | 0.04903 |
+| KRW | HKD | reference | 0.005721 |
+| MYR | HKD | reference | 1.94685 |
+| PHP | HKD | reference | 0.1285 |
+| SGD | HKD | reference | 6.158 |
+| THB | HKD | reference | 0.23695 |
+| TWD | HKD | reference | 0.246 |
+| USD | HKD | reference | 7.839 |
+| ZAR | HKD | reference | 0.485 |
+
+Source: [Official rates published by HKMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/hkma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
