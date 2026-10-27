@@ -1,6 +1,6 @@
 {
   "name": "hkma-exchange-rate",
-  "version": "1.3.18",
+  "version": "1.3.19",
   "description": "Official Hong Kong Monetary Authority (Hong Kong) daily exchange rates — 17 currencies vs HKD, history since 1981. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "hkma",
@@ -29,7 +29,17 @@
     "official-rates",
     "hong-kong",
     "api",
-    "typescript"
+    "typescript",
+    "money",
+    "convert",
+    "conversion",
+    "exchange",
+    "rate",
+    "accounting",
+    "utilities",
+    "number",
+    "cart",
+    "ecommerce"
   ],
   "homepage": "https://allratestoday.com/central-bank-rates-api/hkma/",
   "repository": {
