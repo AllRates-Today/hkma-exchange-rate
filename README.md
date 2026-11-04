@@ -32,27 +32,27 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-09-30 by Hong Kong Monetary Authority — 17 rates. Updated 2026-10-30.</summary>
+<summary>Table as text: published 2026-10-31 by Hong Kong Monetary Authority — 17 rates. Updated 2026-11-04.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | HKD | reference | 5.473 |
-| CAD | HKD | reference | 5.532 |
-| CHF | HKD | reference | 9.416 |
-| CNY | HKD | reference | 1.17025 |
-| EUR | HKD | reference | 8.907 |
-| GBP | HKD | reference | 10.4025 |
-| IDR | HKD | reference | 0.0004391 |
-| INR | HKD | reference | 0.0815 |
-| JPY | HKD | reference | 0.05004 |
-| KRW | HKD | reference | 0.005799 |
-| MYR | HKD | reference | 1.92245 |
+| AUD | HKD | reference | 5.516 |
+| CAD | HKD | reference | 5.613 |
+| CHF | HKD | reference | 9.5095 |
+| CNY | HKD | reference | 1.1793 |
+| EUR | HKD | reference | 8.7545 |
+| GBP | HKD | reference | 10.501 |
+| IDR | HKD | reference | 0.00043285 |
+| INR | HKD | reference | 0.0825 |
+| JPY | HKD | reference | 0.049745 |
+| KRW | HKD | reference | 0.005881 |
+| MYR | HKD | reference | 1.93365 |
 | PHP | HKD | reference | 0.1285 |
-| SGD | HKD | reference | 6.1455 |
-| THB | HKD | reference | 0.23425 |
-| TWD | HKD | reference | 0.246 |
-| USD | HKD | reference | 7.847 |
-| ZAR | HKD | reference | 0.479 |
+| SGD | HKD | reference | 6.138 |
+| THB | HKD | reference | 0.23255 |
+| TWD | HKD | reference | 0.251 |
+| USD | HKD | reference | 7.8455 |
+| ZAR | HKD | reference | 0.4695 |
 
 </details>
 
