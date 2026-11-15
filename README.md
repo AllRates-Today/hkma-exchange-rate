@@ -31,7 +31,32 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-_The table is filled in by the daily workflow._
+<details>
+<summary>Table as text: published 2026-10-31 by Hong Kong Monetary Authority — 17 rates. Updated 2026-11-15.</summary>
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | HKD | reference | 5.516 |
+| CAD | HKD | reference | 5.613 |
+| CHF | HKD | reference | 9.5095 |
+| CNY | HKD | reference | 1.1793 |
+| EUR | HKD | reference | 8.7545 |
+| GBP | HKD | reference | 10.501 |
+| IDR | HKD | reference | 0.00043285 |
+| INR | HKD | reference | 0.0825 |
+| JPY | HKD | reference | 0.049745 |
+| KRW | HKD | reference | 0.005881 |
+| MYR | HKD | reference | 1.93365 |
+| PHP | HKD | reference | 0.1285 |
+| SGD | HKD | reference | 6.138 |
+| THB | HKD | reference | 0.23255 |
+| TWD | HKD | reference | 0.251 |
+| USD | HKD | reference | 7.8455 |
+| ZAR | HKD | reference | 0.4695 |
+
+</details>
+
+Source: [Official rates published by HKMA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/hkma/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 📦 Installation
